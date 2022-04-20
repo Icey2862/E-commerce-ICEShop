@@ -1,0 +1,864 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER CSS 1100px */
+header{
+        background-color: black; 
+    }
+    .headerDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100px;
+    } 
+
+    .barraBusquedaHeader{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 33%;
+    }
+
+    a{
+    text-decoration: none;
+    }
+
+    h1{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    }
+
+    .carritoLogo{
+    width: 60px;
+    height: 40px;
+    }
+
+    .menuPadre{
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+    .menuPadre .menuHijo{
+    width: 16%;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    }
+
+    .menuPadre .menuHijo a:hover{
+    color: grey;
+    }
+
+
+/* FIN HEADER CSS */
+
+/* MAIN INDEX CSS */
+
+.menuPadre .menuHijo a{
+    color: black;
+}
+.carrouselForm{
+    border: 3px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.carrouselSize{
+    width: 300px;
+    height: 300px;
+}
+
+#seccionsIndex{
+    display: grid;
+    grid-template-areas: 
+                        "buzos remeras bermudas"
+                        "joggers conjuntos accesorios";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.imgBuzo{
+    grid-area: buzos;
+}
+.imgBuzo .imgBuzoSize{
+    border: 5px solid black;
+}
+.imgRemera{
+    grid-area: remeras;
+}
+
+.imgRemera .imgRemeraSize{
+    border: 5px solid black;
+}
+.imgBermuda{
+    grid-area: bermudas;
+}
+.imgBermuda .imgBermudaSize{
+    border: 5px solid black;
+}
+
+.imgJoggers{
+    grid-area: joggers;
+}
+
+.imgJoggers .imgJoggersSize{
+    border: 5px solid black;
+}
+
+.imgConjuntos{
+grid-area: conjuntos;
+
+}
+.imgConjuntos .imgConjuntosSize{
+
+    border: 5px solid black;
+}
+
+.imgAccesorios {
+grid-area: accesorios;
+
+}
+
+.imgAccesorios .imgAccesoriosSize{
+    grid-area: accesorios;
+    border: 5px solid black;
+
+}
+
+.buttonAllProducts{
+    text-align: center;
+    border: 2px dashed grey;
+    border-radius: 30px;
+    font-size: 25px;
+    color: black;
+    background-color: grey;
+    margin-left: 40%;
+}
+
+.aboutUsIndex{
+    height: 400px;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.aboutUsIndex .tituloAboutUsIndex{
+    font-size: 30px;
+    margin-bottom: 3px;
+    padding-left: 30px;
+}
+
+.aboutUsIndex .parrafoAboutUsIndex{
+    font-size: 20px;
+    height: 10px;
+    width: 360px;
+    padding-top: 30px;
+    padding-left: 32px;
+}
+
+.aboutUsIndex .aboutUsImagenForm{
+    display: flex;
+}
+
+.aboutUsIndex .aboutUsImagenForm .aboutUsImagenSize{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 450px;
+}
+
+/* Main Sizetable CSS */
+
+.tablaTitulo{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 42px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tablaHombreSubtitulo{
+    padding-top: 30px;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.tablaMujerSubtitulo{
+    padding-top: 30px;
+    color: rgb(132, 64, 76);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 0 1em 0;
+    caption-side: top;
+}
+
+caption, td, th {
+    padding: 0.3em;
+}
+th, td {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+th.last, td.last {
+    border-right: 0;
+}
+tfoot th, tfoot td {
+    border-bottom: 0;
+    text-align: center;
+}
+th {
+    width: 25%;
+}
+
+/* Fin Sizetable CSS */
+
+/* Productos css */
+
+.tituloProductos{
+    font-size: 32px;
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Button all products sections */
+
+.todosLosProductos{
+        width: 300px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px ;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        outline: none;
+        border: 1px solid #000;
+        color: #000;
+        background: transparent;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+    .todosLosProductos:hover:after {
+        top: 0;
+        text-align: center;
+        left: 0;
+}
+    .todosLosProductos:after {
+        content: "";
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 5px;
+        left: 5px;
+        transition: 0.2s;
+        background-color: #6c757d;
+        text-align: center;
+}
+/* ------------------ */
+
+.divProductos{
+    display: grid;
+    grid-template-areas:
+                        "primerArticle segundoArticle tercerArticle"
+                        "cuartoArticle quintoArticle sextoArticle"
+                        "septimoArticle octavoArticle novenoArticle" 
+                        "decimoArticle decimoArticle decimoArticle";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: rgb(63, 61, 61);
+
+}
+
+.primerArticle{
+    grid-area: primerArticle;   
+    text-align: center;
+}
+
+.producto1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagenProducto1{
+    width: 70%;
+    height: 50%;
+}
+
+.segundoArticle{
+    grid-area: segundoArticle;
+    text-align: center;
+
+}
+
+.producto2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagenProducto2{
+    width: 70%;
+    height: 50%;
+
+}
+
+.tercerArticle{
+    grid-area: tercerArticle;
+    text-align: center;
+}
+
+.producto3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagenProducto3{
+    width: 70%;
+    height: 50%;
+}
+
+.cuartoArticle{
+    grid-area: cuartoArticle;
+    text-align: center;
+}
+
+.producto4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagenProducto4{
+    width: 70%;
+    height: 50%;
+}
+
+.quintoArticle{
+    grid-area: quintoArticle;
+    text-align: center;
+}
+
+.producto5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagenProducto5{
+    width: 70%;
+    height: 50%;
+}
+
+.sextoArticle{
+    grid-area: sextoArticle;
+    text-align: center;
+}
+.producto6{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagenProducto6{ 
+    width: 70%;
+    height: 50%;
+}
+
+.septimoArticle{
+    grid-area: septimoArticle;
+    text-align: center;
+}
+.producto7{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.imagenProducto7{
+    width: 70%;
+    height: 50%;
+}
+
+.octavoArticle{
+    grid-area: octavoArticle;
+    text-align: center;
+}
+.producto8{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.imagenProducto8{
+    width: 70%;
+    height: 50%;
+}
+
+.novenoArticle{
+    grid-area: novenoArticle;
+    text-align: center;
+}
+.producto9{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.imagenProducto9{
+    width: 70%;
+    height: 50%;
+}
+.decimoArticle{
+    grid-area: decimoArticle;
+    text-align: center;
+}
+.producto10{
+    text-align: center;
+}
+.imagenProducto10{
+    width: 60%;
+    height: 60%;
+}
+/* Fin productos CSS */
+
+/* FAQ CSS */
+
+.faqComprar{
+    display:flex;
+    flex-direction: column;
+    height: 20%;
+    width: 50%;
+    padding-left: 20px;
+}
+.tituloComprar{
+    padding-top: 10px;
+    display: block;
+    color: rgb(85, 20, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.faqPagos{
+    display:flex;
+    flex-direction: column;
+    height: 20%;
+    width: 50%;
+    padding-left: 20px;
+}
+.tituloPagos{
+    padding-top: 10px;
+    color: rgb(85, 20, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.faqEnvios{
+    display:flex;
+    flex-direction: column;
+    height: 20%;
+    width: 50%;
+    padding-left: 20px;
+}
+.tituloEnvios{
+    padding-top: 10px;
+    color: rgb(85, 20, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.faqMayorista{
+    display:flex;
+    flex-direction: column;
+    height: 20%;
+    width: 50%;
+    padding-left: 20px;
+}
+.tituloMayorista{
+    padding-top: 10px;
+    color: rgb(85, 20, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.faqPedidos{
+    display:flex;
+    flex-direction: column;
+    height: 20%;
+    width: 50%;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.tituloPedidos{
+    padding-top: 30px;
+    color: rgb(85, 20, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.googleMaps{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60%;
+    bottom: 150px;
+}
+/* Fin FAQ CSS */
+
+/* Contact CSS */
+.contactDiv{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+.contactTitle{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    color: rgb(77, 64, 64);
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.uneteDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+.contactSubTitle{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.contactParrafo{
+    width: 50%;
+    height: auto;
+    display: contents;
+}
+
+.reclamosDiv{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content:center ;
+}
+.reclamoTitle{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+
+/* Fin contact css */
+
+
+/* About us CSS */
+
+.aboutUsDiv{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.quienesSomosDiv{
+    display: flex;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.aboutUs{
+    color: rgb(157, 109, 116);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    text-decoration: underline;
+}
+
+.quienesSomosP{
+    width: 100%;
+    height: auto;
+}
+
+.listaAboutUs{
+    list-style-type: none;
+
+}
+
+.materialDiv{
+    display: flex;
+    text-align: center;
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.materialPrendas{
+    color: rgb(85, 20, 32);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    text-decoration: underline;
+}
+
+.listaPrendas{ 
+    list-style-type: square;
+    text-align: center;
+}
+
+.itemPrendas{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 15px;
+    text-transform: uppercase;
+
+}
+/* Fin About us CSS */
+
+
+/* FOOTER CSS */
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 200px;
+    width: 100%;
+}
+
+.divFootNavegacion{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+}
+.footerFontSizeNavegacion{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.footerListed{
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    padding-top: 10 px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.footerListed .footerMenu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.divFootPagos{
+    display: flex;
+    width: 25%;
+    height: auto;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.footerFontSizePago{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.divFootPagosImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mediosDePagoImgPaypal{
+    width: 35px;
+    height: 30px;
+}
+.mediosDePagoImgAmerican{
+    width: 35px;
+    height: 30px;
+
+}
+.mediosDePagoImgBtc{
+    width: 35px;
+    height: 30px;
+}
+.mediosDePagoImgVisa{
+    width: 35px;
+    height: 30px;
+}
+.mediosDePagoImgMaster{
+    width: 35px;
+    height: 30px;
+}
+.mediosDePagoImgBanelco{
+    width: 35px;
+    height: 30px;
+}
+.divFootRedes{
+    display: flex;
+    width: 25%;
+    height: auto;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.footerFontSizeRedes{
+    font-size: 20px;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+.divFootRedesImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesSocialesIg .redesSocialesInstagram{
+    width: 35px;
+    height: 40px;
+}
+
+
+.redesSocialesFb .redesSocialesFacebook{
+    width: 55px;
+    height: 40px;
+
+}
+
+.redesSocialesW .redesSocialesWhatsapp{
+    width: 65px;
+    height: 60px;
+}
+
+.divFootNews{
+    display: flex;
+    width: 25%;
+    height: auto;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.footerFontSizeNews{
+    font-size: 20px;
+    width: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.divFootNewsCorreo{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive index */
+
+@media only screen and (max-width: 480px) {
+    body{
+    width: 100%;
+    }
+
+    .barraBusquedaHeader {
+    display: block;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    }   
+    img{
+    width: 100%;
+    }
+    .menuPadre{
+        width: 100%;
+        text-align: center;
+        float: left;
+        display: block;
+    }
+    .menuHijo{
+        width: 100% !important;
+        text-align: center;
+        float: left;
+    }
+
+    .carrouselSize {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutUsIndex{
+        height: 400px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .aboutUsIndex .tituloAboutUsIndex{
+        font-size: 30px;
+        margin-bottom: 3px;
+        padding-left: 30px;
+    }
+    
+    .aboutUsIndex .parrafoAboutUsIndex{
+        font-size: 20px;
+        height: 300px;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 32px;
+        position: relative;
+    }
+    
+    .aboutUsIndex .aboutUsImagenForm{
+        display: block;
+    }
+    
+    .aboutUsIndex .aboutUsImagenForm .aboutUsImagenSize{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        left: 0;
+    }
+    .newsletterImputCorreo{
+        width: 100%;
+    }
+    footer{
+        position: relative;
+        margin-top: 260px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 250px;
+    }
+
+    /* faq responsive */
+    .googleMaps{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        left: 0;
+        margin-top: 170px;
+        
+    }
+}

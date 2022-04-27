@@ -4,130 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>ICEShop</title> 
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="headerDiv">
+        <div class="container-fluid">
+            <div class="row">
 <!-- Intento de barra de busqueda -->
-            <form class="barraBusquedaHeader">
-                <input type="text" placeholder="Buscar.." name="buscar">
-                <button type="submit">Buscar</button>
-            </form>
+                <div class="headerDiv col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <form class="barraBusquedaHeader form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar.." name="buscar">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
 <!-- Intento de barra de busqueda -->  
-                <h1>ICEShop</h1> 
-                <img class="carritoLogo" src="./img/carrito_logo.png" alt="carrito"><hr>
+                <div class="headerDiv col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <h1>ICEShop</h1>
+                </div>
+                <!-- <div class="headerDiv col-xs-4 col-sm-6 col-md-4 col-lg-4">
+                    <img class="carritoLogo" src="./img/carrito_logo.png" alt="carrito"><hr>
+                </div> -->
+            </div>
         </div>
-            <nav>
-                <ul class="menuPadre">
-                    <li class="menuHijo"><a href="./pages/articles/buzos.html">Buzos</a></li>
-                    <li class="menuHijo"><a href="./pages/articles/remeras.html">Remeras</a></li>
-                    <li class="menuHijo"><a href="./pages/articles/bermudas.html">Bermudas</a></li>
-                    <li class="menuHijo"><a href="./pages/articles/joggers.html">Joggers</a></li>
-                    <li class="menuHijo"><a href="./pages/articles/conjuntos.html">Conjuntos</a></li>
-                    <li class="menuHijo"><a href="./pages/articles/acesorios.html">Accesorios</a></li>
-                </ul>
-            </nav><hr>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!-- Navbar links -->
+                    <div class="navbarDiv collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="menuHijo nav-item">
+                            <a class="colorNav1 nav-link" href="./pages/articles/buzos.html">Buzos</a>
+                        </li>
+                        <li class="menuHijo nav-item">
+                            <a class="colorNav1 nav-link" href="./pages/articles/remeras.html">Remeras</a>
+                        </li>
+                        <li class="menuHijo nav-item">
+                            <a class="colorNav1 nav-link" href="./pages/articles/bermudas.html">Bermudas</a>
+                        </li>
+                        <li class="menuHijo nav-item ">
+                            <a class="colorNav1 nav-link" href="./pages/articles/joggers.html">Joggers</a>
+                        </li>
+                        <li class="menuHijo nav-item ">
+                            <a class="colorNav1 nav-link" href="./pages/articles/conjuntos.html">Conjuntos</a>
+                        </li>
+                        <li class="menuHijo nav-item">
+                            <a class="colorNav1 nav-link" href="./pages/articles/acesorios.html">Accesorios</a>
+                        </li>
+                    </ul>
+                    </div>
+            </nav>
+        </div>
     </header>
 
     <main>
 <!-- parte de un carrousel -->
-        <article class="carrouselForm">
-            <img class="carrouselSize" src="./img/clothes/buzo1.jpg" alt="Buzo levis negro" >
-            <img class="carrouselSize" src="./img/clothes/buzo2.jfif" alt="Buzo levis blanco y gris">
-            <img class="carrouselSize" src="./img/clothes/buzo3.jfif" alt="Hoodie Negro ">
-            <img class="carrouselSize" src="./img/clothes/buzo4.jpg" alt="Hoodie hollister verde agua"> 
-        </article>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo1.jpg" alt="Buzo levis negro">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo2.jfif" alt="Buzo levis blanco y gris">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo3.jfif" alt="Hoodie Negro">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrouselSize" src="./img/clothes/buzo4.jpg" alt="Hoodie hollister verde agua" >
+            </div>
+        
+            <button class="carousel-control-prev btn-dark buttonCarousel" type="button" data-target="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next btn btn-dark buttonCarousel" type="button" data-target="#demo" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div>  
+
 <!-- parte de un carrousel -->
-        <div id="seccionsIndex">
-            <a class="imgBuzo" href="./pages/articles/buzos.html">
-                <img class="imgBuzoSize" src="./img/buzos.png" alt="Buzos">
-            </a>
-            <a class="imgRemera" href="./pages/articles/remeras.html">
-                <img class="imgRemeraSize" src="./img/REMERAS.png" alt="Remeras">
-            </a>
-            <a class="imgBermuda" href="./pages/articles/bermudas.html">
-                <img class="imgBermudaSize"src="./img/BERMUDAS.png" alt="Bermudas">
-            </a> <br>
-            <a class="imgJoggers" href="./pages/articles/joggers.html">
-                <img class="imgJoggersSize"src="./img/joggers.png" alt="Joggers">
-            </a>
-            <a class="imgConjuntos" href="./articles/conjuntos.html">
-                <img class="imgConjuntosSize"src="./img/conjuntos.png" alt="Conjuntos">
-            </a>
-            <a class="imgAccesorios" href="./pages/articles/acesorios.html">
-                <img class="imgAccesoriosSize"src="./img/ACCESORIOS.png" alt="Accesorios">
-            </a> <br>
+        <div id="seccionsIndex" class="container divJoggers">
+            <div class="row">
+                <a class="imgBuzo d-flex justify-content-center col-sm-4" href="./pages/articles/buzos.html">
+                    <img class="imgBuzoSize" src="./img/buzos.png" alt="Buzos">
+                </a>
+                <a class="imgRemera col-sm-4 d-flex justify-content-center" href="./pages/articles/remeras.html">
+                    <img class="imgRemeraSize" src="./img/REMERAS.png" alt="Remeras">
+                </a>
+                <a class="imgBermuda col-sm-4 d-flex justify-content-center" href="./pages/articles/bermudas.html">
+                    <img class="imgBermudaSize"src="./img/BERMUDAS.png" alt="Bermudas">
+                </a> <br>
+                <a class="imgJoggers col-sm-4 d-flex justify-content-center" href="./pages/articles/joggers.html">
+                    <img class="imgJoggersSize"src="./img/joggers.png" alt="Joggers">
+                </a>
+                <a class="imgConjuntos col-sm-4 d-flex justify-content-center" href="./articles/conjuntos.html">
+                    <img class="imgConjuntosSize"src="./img/conjuntos.png" alt="Conjuntos">
+                </a>
+                <a class="imgAccesorios col-sm-4 d-flex justify-content-center" href="./pages/articles/acesorios.html">
+                    <img class="imgAccesoriosSize"src="./img/ACCESORIOS.png" alt="Accesorios">
+                </a> <br>
+            </div>
         </div>
         <a class="buttonAllProducts" href="./pages/productos.html">Ver todos los productos</a>
-        <article class="aboutUsIndex">
-            <h2 class="tituloAboutUsIndex">ICEShop</h2>
-                <p class="parrafoAboutUsIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae quisquam expedita reiciendis molestiae, itaque nihil cumque numquam neque illo doloribus cupiditate at fugiat sunt quia! In ab mollitia earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veniam pariatur dolorum ducimus ipsam nihil, quidem culpa fugiat, sed nemo magni minus quisquam vero iure laborum eum iusto voluptatibus. Assumenda.</p>
-            <section class="aboutUsImagenForm">
-            <img class="aboutUsImagenSize" src="./img/local.jpeg" alt="Local">
-            </section>
-        </article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="aboutUsIndex col-sm-6">
+                    <h2 class="tituloAboutUsIndex">ICEShop</h2>
+                        <p class="parrafoAboutUsIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae quisquam expedita reiciendis molestiae, itaque nihil cumque numquam neque illo doloribus cupiditate at fugiat sunt quia! In ab mollitia earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veniam pariatur dolorum ducimus ipsam nihil, quidem culpa fugiat, sed nemo magni minus quisquam vero iure laborum eum iusto voluptatibus. Assumenda.</p>
+                    </div>
+                <div class="aboutUsImagenForm col-sm-6">
+                    <img class="aboutUsImagenSize" src="./img/local.jpeg" alt="Local">
+                </div>
+            </div>
+        </div>
     </main> <hr>
 
     <footer>
-    <div class="divFootNavegacion">
-        <h3 class="footerFontSizeNavegacion">Navegación</h3>
-        <nav>
-            <ul class="footerListed">
-                <li class="footerMenu"><a href="./pages/productos.html">Productos</a></li>
-                <li class="footerMenu"><a href="./pages/sizetable.html">Tabla de talles</a></li>
-                <li class="footerMenu"><a href="./pages/faq.html">FAQ</a></li>
-                <li class="footerMenu"><a href="./pages/contact.html">Contacto</a></li>
-                <li class="footerMenu"><a href="./pages/about_us.html">Acerca de nosotros</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="divFootPagos">
-        <h3 class="footerFontSizePago">Medios de pago</h3>
-        <div class="divFooterPagosImg">
-            <img class="mediosDePagoImgPaypal" src="./img/paypal-logo.png" alt="PayPal">
-            <img class="mediosDePagoImgAmerican" src="./img/americanxpress.png" alt="AmericanExpress">
-            <img class="mediosDePagoImgBtc" src="./img/bitcoin.jpg" alt="Bitcoin"><br>
-            <img class="mediosDePagoImgVisa" src="./img/visa.png" alt="Visa">
-            <img class="mediosDePagoImgMaster" src="./img/mastercard.png" alt="Mastercard" >
-            <img class="mediosDePagoImgBanelco" src="./img/banelco.jfif" alt="Banelco"><br>
-        </div>
-    </div>
-    <div class="divFootRedes">
-        <h3 class="footerFontSizeRedes">Redes Sociales</h3>
-        <div class="divFootRedesImg">
-            <a class="redesSocialesFb" href="https://www.facebook.com/b.n.nocolas/" target="_blank">
-                <img class="redesSocialesFacebook "src="./img/facebook.png" alt="facebook">
-            </a>
-            <a class="redesSocialesIg" href="https://www.instagram.com/ojjeda._/" target="_blank">
-                <img class="redesSocialesInstagram" src="./img/instagram.png" alt="Instagram">
-            </a>
-            <a class="redesSocialesW" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank">
-                <img class="redesSocialesWhatsapp" src="./img/whatsapp.png" alt="whatsapp">
-            </a> <br>
-        </div>
-    </div>
-    <div class="divFootNews">
-        <h3 class="footerFontSizeNews">Newsletter</h3>
-        <div class="divFootNewsCorreo">
-        <form class="newsletter" action="Newsletter.php" method="post">
-                <label for="mail" class="letrashf newsletterCorreo">Correo:</label>
-                <input class="newsletterImputCorreo" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
-                <input class="newsletterSubmit" type="submit" value="Enviar"> <br>
-        </div>
-        <div class="divFootNewsTerminos">
-            <input class="newsletterTerminos" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
-                <label for="checkbox-terminos" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
-        </div>
-        <div class="divFootNoticias">
-            <input class="newsletterNoticia" type="checkbox" name="checkbox-news" value="Acepta newsletter">
-                <label for="checkbox-news" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
-        </div>
-        </form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="divFootNavegacion col-sm-3">
+                <h3 class="footerFontSizeNavegacion">Navegación</h3>
+                <nav>
+                    <ul class="footerListed nav flex-column">
+                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/sizetable.html">Tabla de talles</a></li>
+                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/contact.html">Contacto</a></li>
+                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/about_us.html">Acerca de nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="divFootPagos col-sm-3">
+                <h3 class="footerFontSizePago">Medios de pago</h3>
+                <div class="divFooterPagosImg">
+                    <img class="mediosDePagoImgPaypal" src="./img/paypal-logo.png" alt="PayPal">
+                    <img class="mediosDePagoImgAmerican" src="./img/americanxpress.png" alt="AmericanExpress">
+                    <img class="mediosDePagoImgBtc" src="./img/bitcoin.jpg" alt="Bitcoin"><br>
+                    <img class="mediosDePagoImgVisa" src="./img/visa.png" alt="Visa">
+                    <img class="mediosDePagoImgMaster" src="./img/mastercard.png" alt="Mastercard" >
+                    <img class="mediosDePagoImgBanelco" src="./img/banelco.jfif" alt="Banelco"><br>
+                </div>
+            </div>
+            <div class="divFootRedes col-sm-3">
+                <h3 class="footerFontSizeRedes">Redes Sociales</h3>
+                <div class="divFootRedesImg">
+                    <a class="redesSocialesFb" href="https://www.facebook.com/b.n.nocolas/" target="_blank">
+                        <img class="redesSocialesFacebook "src="./img/facebook.png" alt="facebook">
+                    </a>
+                    <a class="redesSocialesIg" href="https://www.instagram.com/ojjeda._/" target="_blank">
+                        <img class="redesSocialesInstagram" src="./img/instagram.png" alt="Instagram">
+                    </a>
+                    <a class="redesSocialesW" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank">
+                        <img class="redesSocialesWhatsapp" src="./img/whatsapp.png" alt="whatsapp">
+                    </a> <br>
+                </div>
+            </div>
+            <div class="divFootNews col-sm-3">
+            <h3 class="footerFontSizeNews">Newsletter</h3>
+            <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
+                <div class="divFootNewsCorreo form-group">
+                        <label for="mail" class="letrashf newsletterCorreo">Correo:</label>
+                        <input class="newsletterImputCorreo form-control" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
+                        <input class="newsletterSubmit btn btn-dark" type="submit" value="Enviar"> <br>
+                </div>
+                <div class="divFootNewsTerminos form-group form-check">
+                    <input class="newsletterTerminos form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
+                        <label for="checkbox-terminos form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
+                </div>
+                <div class="divFootNoticias form-group form-check">
+                    <input class="newsletterNoticia form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
+                        <label for="checkbox-news form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
+                </div>
+                </form>
+            </div>
+        </div>    
     </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

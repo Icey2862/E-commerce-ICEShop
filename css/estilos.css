@@ -3,31 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    height: auto;
+    width: 100%;
+}
 
 /* HEADER CSS 1100px */
 header{
-        background-color: black; 
+        background-color: black;
     }
-    .headerDiv{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 15px;
-        width: 100%;
-        height: 100px;
-    } 
 
-    .barraBusquedaHeader{
+    .headerDiv{
     display: flex;
     align-items: center;
-    height: 30px;
-    width: 33%;
-    }
-
-    a{
-    text-decoration: none;
+    margin-top: 30px;
+    justify-content: flex-start;
     }
 
     h1{
@@ -37,106 +27,79 @@ header{
     }
 
     .carritoLogo{
-    width: 60px;
-    height: 40px;
+    color: white;
+    height: 2rem;
+    width: 1rem;
     }
 
-    .menuPadre{
-    background-color: white;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    }
-
-    .menuPadre .menuHijo{
-    width: 16%;
-    font-size: 14px;
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
+.menuPadre .menuHijo a{
+        color: white;
+        text-decoration: none;
     }
 
     .menuPadre .menuHijo a:hover{
     color: grey;
     }
 
+.navColor{
+    background-color: black ;
+}
 
+.navbarDiv{
+    display: flex;
+    justify-content: space-around;
+}
 /* FIN HEADER CSS */
 
 /* MAIN INDEX CSS */
 
-.menuPadre .menuHijo a{
-    color: black;
-}
 .carrouselForm{
     border: 3px solid black;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 .carrouselSize{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 500px;
+}
+.buttonCarousel{
+    color: black;
+    border-radius: 50%;
+    opacity: 1;
 }
 
-#seccionsIndex{
-    display: grid;
-    grid-template-areas: 
-                        "buzos remeras bermudas"
-                        "joggers conjuntos accesorios";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 10px;
-    justify-items: center;
-    justify-content: center;
-}
-
-.imgBuzo{
-    grid-area: buzos;
+.divJoggers{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .imgBuzo .imgBuzoSize{
     border: 5px solid black;
-}
-.imgRemera{
-    grid-area: remeras;
+    margin-bottom: 30px;
 }
 
 .imgRemera .imgRemeraSize{
     border: 5px solid black;
-}
-.imgBermuda{
-    grid-area: bermudas;
-}
-.imgBermuda .imgBermudaSize{
-    border: 5px solid black;
+    margin-bottom: 30px;
 }
 
-.imgJoggers{
-    grid-area: joggers;
+.imgBermuda .imgBermudaSize{
+    border: 5px solid black;
+    margin-bottom: 30px;
 }
 
 .imgJoggers .imgJoggersSize{
     border: 5px solid black;
+    margin-bottom: 30px;
 }
 
-.imgConjuntos{
-grid-area: conjuntos;
-
-}
 .imgConjuntos .imgConjuntosSize{
-
     border: 5px solid black;
-}
-
-.imgAccesorios {
-grid-area: accesorios;
-
+    margin-bottom: 30px;
 }
 
 .imgAccesorios .imgAccesoriosSize{
-    grid-area: accesorios;
-    border: 5px solid black;
-
+    border: 5px solid black; 
+    margin-bottom: 30px;
 }
 
 .buttonAllProducts{
@@ -150,35 +113,22 @@ grid-area: accesorios;
 }
 
 .aboutUsIndex{
-    height: 400px;
-    width: 400px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 60px;
 }
 
 .aboutUsIndex .tituloAboutUsIndex{
     font-size: 30px;
-    margin-bottom: 3px;
-    padding-left: 30px;
+
 }
 
 .aboutUsIndex .parrafoAboutUsIndex{
     font-size: 20px;
-    height: 10px;
-    width: 360px;
-    padding-top: 30px;
-    padding-left: 32px;
 }
 
-.aboutUsIndex .aboutUsImagenForm{
-    display: flex;
-}
-
-.aboutUsIndex .aboutUsImagenForm .aboutUsImagenSize{
-    width: 500px;
-    height: 300px;
-    position: relative;
-    left: 450px;
+.aboutUsImagenSize{
+    padding-top: 20px;
+    width: 100%;
+    height: 400px;
 }
 
 /* Main Sizetable CSS */
@@ -189,6 +139,7 @@ grid-area: accesorios;
     font-size: 42px;
     text-align: center;
     text-decoration: underline;
+    padding-top: 30px;
 }
 
 .tablaHombreSubtitulo{
@@ -196,6 +147,7 @@ grid-area: accesorios;
     color: blue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
+    text-align: center;
 }
 
 .tablaMujerSubtitulo{
@@ -203,31 +155,7 @@ grid-area: accesorios;
     color: rgb(132, 64, 76);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
-}
-table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    margin: 0 0 1em 0;
-    caption-side: top;
-}
-
-caption, td, th {
-    padding: 0.3em;
-}
-th, td {
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
-}
-th.last, td.last {
-    border-right: 0;
-}
-tfoot th, tfoot td {
-    border-bottom: 0;
     text-align: center;
-}
-th {
-    width: 25%;
 }
 
 /* Fin Sizetable CSS */
@@ -523,10 +451,6 @@ th {
 
 /* Contact CSS */
 .contactDiv{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     padding-bottom: 30px;
 }
 .contactTitle{
@@ -537,38 +461,15 @@ th {
     padding-top: 30px;
     margin-bottom: 30px;
 }
-.uneteDiv{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-    height: auto;
-}
+
 .contactSubTitle{
     text-align: center;
     text-decoration: underline;
-
 }
 
-.contactParrafo{
-    width: 50%;
-    height: auto;
-    display: contents;
+.form-group{
+    margin: 0;
 }
-
-.reclamosDiv{
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-content:center ;
-}
-.reclamoTitle{
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
-
-
 /* Fin contact css */
 
 
@@ -639,19 +540,11 @@ th {
 /* FOOTER CSS */
 footer{
     background-color: black;
-    display: flex;
-    flex-direction: row;
     color: white;
-    height: 200px;
+    height: auto;
     width: 100%;
 }
 
-.divFootNavegacion{
-    display: flex;
-    width: 25%;
-    height: 100%;
-    flex-direction: column;
-}
 .footerFontSizeNavegacion{
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -659,25 +552,15 @@ footer{
 }
 .footerListed{
     text-decoration: none;
-    list-style: none;
-    text-align: left;
-    padding-top: 10 px;
-    padding-bottom: 5px;
-    text-align: center;
 }
 
 .footerListed .footerMenu a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .divFootPagos{
-    display: flex;
-    width: 25%;
-    height: auto;
-    flex-direction: column;
-    align-content: flex-start;
     text-align: center;
 }
 
@@ -685,61 +568,50 @@ footer{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    padding-bottom: 10px;
 }
-
-.divFootPagosImg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.divFooterPagosImg{
+    margin: 5px 10px 5px 5px;
 }
 
 .mediosDePagoImgPaypal{
     width: 35px;
     height: 30px;
+    margin: 5px 10px 5px 5px
 }
 .mediosDePagoImgAmerican{
     width: 35px;
     height: 30px;
-
+    margin: 5px 10px 5px 5px
 }
 .mediosDePagoImgBtc{
     width: 35px;
     height: 30px;
+    margin: 5px 10px 5px 5px
 }
 .mediosDePagoImgVisa{
     width: 35px;
     height: 30px;
+    margin: 5px 10px 5px 5px
 }
 .mediosDePagoImgMaster{
     width: 35px;
     height: 30px;
+    margin: 5px 10px 5px 5px
 }
 .mediosDePagoImgBanelco{
     width: 35px;
     height: 30px;
+    margin: 5px 10px 5px 5px
 }
 .divFootRedes{
-    display: flex;
-    width: 25%;
-    height: auto;
-    flex-direction: column;
-    align-content: flex-start;
+    text-align: center;
 }
+
 .footerFontSizeRedes{
     font-size: 20px;
-    width: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-
 }
-.divFootRedesImg{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .redesSocialesIg .redesSocialesInstagram{
     width: 35px;
     height: 40px;
@@ -757,23 +629,9 @@ footer{
     height: 60px;
 }
 
-.divFootNews{
-    display: flex;
-    width: 25%;
-    height: auto;
-    flex-direction: column;
-    align-content: flex-start;
-}
 .footerFontSizeNews{
     font-size: 20px;
-    width: 120px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.divFootNewsCorreo{
-    display: flex;
-    flex-direction: column;
 }
 
 /* Responsive index */

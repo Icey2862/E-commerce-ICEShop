@@ -173,7 +173,7 @@ header{
 
 .todosLosProductos{
         width: 300px;
-        height: 40px;
+        height: 80px;
         color: #fff;
         padding: 5px 10px ;
         font-weight: bold;
@@ -188,6 +188,7 @@ header{
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
+        flex-wrap: wrap;
 }
 
     .todosLosProductos:hover:after {
@@ -368,76 +369,44 @@ header{
 
 /* FAQ CSS */
 
-.faqComprar{
-    display:flex;
-    flex-direction: column;
-    height: 20%;
-    width: 50%;
-    padding-left: 20px;
-}
 .tituloComprar{
     padding-top: 10px;
-    display: block;
     color: rgb(85, 20, 32);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
+    font-size: 20px;
 }
 
-.faqPagos{
-    display:flex;
-    flex-direction: column;
-    height: 20%;
-    width: 50%;
-    padding-left: 20px;
-}
 .tituloPagos{
     padding-top: 10px;
     color: rgb(85, 20, 32);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
+    font-size: 20px;
 }
 
-.faqEnvios{
-    display:flex;
-    flex-direction: column;
-    height: 20%;
-    width: 50%;
-    padding-left: 20px;
-}
 .tituloEnvios{
     padding-top: 10px;
     color: rgb(85, 20, 32);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
+    font-size: 20px;
 }
 
-.faqMayorista{
-    display:flex;
-    flex-direction: column;
-    height: 20%;
-    width: 50%;
-    padding-left: 20px;
-}
 .tituloMayorista{
     padding-top: 10px;
     color: rgb(85, 20, 32);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
+    font-size: 20px;
 }
 
-.faqPedidos{
-    display:flex;
-    flex-direction: column;
-    height: 20%;
-    width: 50%;
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
 .tituloPedidos{
     padding-top: 30px;
     color: rgb(85, 20, 32);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .googleMaps{
@@ -475,26 +444,12 @@ header{
 
 /* About us CSS */
 
-.aboutUsDiv{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 30px;
-}
 
-.quienesSomosDiv{
-    display: flex;
-    text-align: center;
-    width: 40%;
-    height: auto;
-    flex-direction: column;
-    padding-top: 30px;
-}
 .aboutUs{
     color: rgb(157, 109, 116);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     text-decoration: underline;
+    padding-top: 10px;
 }
 
 .quienesSomosP{
@@ -520,17 +475,16 @@ header{
     color: rgb(85, 20, 32);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     text-decoration: underline;
+    padding-top: 10px;
 }
 
 .listaPrendas{ 
     list-style-type: square;
-    text-align: center;
+    text-align: left;
 }
 
 .itemPrendas{
-    display: flex;
     padding-left: 10px;
-    padding-top: 15px;
     text-transform: uppercase;
 
 }

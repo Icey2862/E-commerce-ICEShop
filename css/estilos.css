@@ -14,25 +14,22 @@ header{
     }
 
     .headerDiv{
+    margin-top: 30px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
-    justify-content: flex-start;
     }
 
-    h1{
-    color: white;
-    font-size: 40px;
-    text-decoration: none;
+    .navDiv{
+        display: flex;
+        justify-content: center
     }
 
-    .carritoLogo{
-    color: white;
-    height: 2rem;
-    width: 1rem;
+    .navbar-brand{
+        font-size: 40px;
+        text-transform: uppercase;
     }
 
-.menuPadre .menuHijo a{
+    .menuPadre .menuHijo a{
         color: white;
         text-decoration: none;
     }
@@ -42,12 +39,7 @@ header{
     }
 
 .navColor{
-    background-color: black ;
-}
-
-.navbarDiv{
-    display: flex;
-    justify-content: space-around;
+    background-color: black;
 }
 /* FIN HEADER CSS */
 
@@ -172,7 +164,7 @@ header{
 /* Button all products sections */
 
 .todosLosProductos{
-        width: 300px;
+        width: 99.70%;
         height: 80px;
         color: #fff;
         padding: 5px 10px ;
@@ -183,10 +175,11 @@ header{
         display: flex;
         outline: none;
         border: 1px solid #000;
-        color: #000;
+        color: white;
         background: transparent;
         text-align: center;
-        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 20px;
         flex-wrap: wrap;
 }
@@ -222,27 +215,37 @@ header{
     text-decoration: underline;
     text-transform: capitalize;
     color: rgb(63, 61, 61);
-
+    margin-left: 10px;
 }
-
+.tituloProductos{
+    color: white;
+    background-color: #6c757d;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    text-align: center;
+}
 .primerArticle{
     grid-area: primerArticle;   
     text-align: center;
+    border: 4px #000 solid;
 }
 
 .producto1{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .imagenProducto1{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .segundoArticle{
     grid-area: segundoArticle;
     text-align: center;
+    border: 4px #000 solid;
 
 }
 
@@ -254,12 +257,13 @@ header{
 .imagenProducto2{
     width: 70%;
     height: 50%;
-
+    margin-bottom: 30px;
 }
 
 .tercerArticle{
     grid-area: tercerArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 
 .producto3{
@@ -270,11 +274,13 @@ header{
 .imagenProducto3{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .cuartoArticle{
     grid-area: cuartoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 
 .producto4{
@@ -285,11 +291,13 @@ header{
 .imagenProducto4{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .quintoArticle{
     grid-area: quintoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 
 .producto5{
@@ -300,11 +308,13 @@ header{
 .imagenProducto5{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .sextoArticle{
     grid-area: sextoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 .producto6{
     text-align: center;
@@ -314,11 +324,13 @@ header{
 .imagenProducto6{ 
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .septimoArticle{
     grid-area: septimoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 .producto7{
     text-align: center;
@@ -327,11 +339,13 @@ header{
 .imagenProducto7{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .octavoArticle{
     grid-area: octavoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 .producto8{
     text-align: center;
@@ -340,11 +354,13 @@ header{
 .imagenProducto8{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 
 .novenoArticle{
     grid-area: novenoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 .producto9{
     text-align: center;
@@ -353,10 +369,12 @@ header{
 .imagenProducto9{
     width: 70%;
     height: 50%;
+    margin-bottom: 30px;
 }
 .decimoArticle{
     grid-area: decimoArticle;
     text-align: center;
+    border: 4px #000 solid;
 }
 .producto10{
     text-align: center;
@@ -364,8 +382,182 @@ header{
 .imagenProducto10{
     width: 60%;
     height: 60%;
+    margin-bottom: 30px;
 }
 /* Fin productos CSS */
+
+/* Articles */
+
+.divArticleBuzo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.articleBuzo1{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-left: 45px;
+    border: 4px #000 solid;
+}
+.imagenBuzo1{
+    width: 75%;
+    height: 300px;
+}
+
+.articleBuzo2{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-right: 45px;
+    border: 4px #000 solid;
+}
+.imagenBuzo2{
+    width: 75%;
+    height: 300px;
+}
+
+.divArticleRemera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.articleRemera1{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-left: 45px;
+    border: 4px #000 solid;
+}
+.imagenRemera1{
+    width: 75%;
+    height: 300px;
+}
+
+.articleRemera2{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-right: 45px;
+    border: 4px #000 solid;
+}
+.imagenRemera2{
+    width: 75%;
+    height: 300px;
+}
+
+.divArticleConjuntos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.articleConjuntos1{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-left: 45px;
+    border: 4px #000 solid;
+}
+.imagenConjuntos1{
+    width: 75%;
+    height: 300px;
+}
+
+.articleConjuntos2{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-right: 45px;
+    border: 4px #000 solid;
+}
+.imagenConjuntos2{
+    width: 75%;
+    height: 300px;
+}
+.divArticleAccs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.articleAccs1{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-left: 45px;
+    border: 4px #000 solid;
+}
+.imagenAccs1{
+    width: 75%;
+    height: 300px;
+}
+
+.articleAccs2{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-right: 45px;
+    border: 4px #000 solid;
+}
+.imagenAccs2{
+    width: 75%;
+    height: 300px;
+}
+
+.divArticleJogger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.articleJogger{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-left: 45px;
+    border: 4px #000 solid;
+}
+
+.imagenJogger{
+    width: 75%;
+    height: 300px;
+}
+
+.divArticleBermuda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.articleBermuda{
+    text-align: center;
+    width: 50%;
+    height: 470px;
+    margin-left: 45px;
+    border: 4px #000 solid;
+}
+
+.imagenBermuda{
+    width: 75%;
+    height: 300px;
+}
+/* Fin Articles */
+
 
 /* FAQ CSS */
 
@@ -497,6 +689,7 @@ footer{
     color: white;
     height: auto;
     width: 100%;
+    margin-top: 60px;
 }
 
 .footerFontSizeNavegacion{
@@ -527,35 +720,29 @@ footer{
     margin: 5px 10px 5px 5px;
 }
 
-.mediosDePagoImgPaypal{
-    width: 35px;
-    height: 30px;
-    margin: 5px 10px 5px 5px
+.mediosDePagoPaypal{
+    font-size: 30px;
+    padding: 5px 10px 5px 5px
 }
-.mediosDePagoImgAmerican{
-    width: 35px;
-    height: 30px;
-    margin: 5px 10px 5px 5px
+.mediosDePagoAmerican{
+    font-size: 30px;
+    padding: 5px 10px 5px 5px
 }
-.mediosDePagoImgBtc{
-    width: 35px;
-    height: 30px;
-    margin: 5px 10px 5px 5px
+.mediosDePagoBtc{
+    font-size: 30px;
+    padding: 5px 10px 5px 5px
 }
-.mediosDePagoImgVisa{
-    width: 35px;
-    height: 30px;
-    margin: 5px 10px 5px 5px
+.mediosDePagoVisa{
+    font-size: 30px;
+    padding: 5px 10px 5px 5px
 }
-.mediosDePagoImgMaster{
-    width: 35px;
-    height: 30px;
-    margin: 5px 10px 5px 5px
+.mediosDePagoMaster{
+    font-size: 30px;
+    padding: 5px 10px 5px 5px
 }
-.mediosDePagoImgBanelco{
-    width: 35px;
-    height: 30px;
-    margin: 5px 10px 5px 5px
+.mediosDePagoEtherium{
+    font-size: 30px;
+    padding: 5px 10px 5px 5px
 }
 .divFootRedes{
     text-align: center;
@@ -566,21 +753,24 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
-.redesSocialesIg .redesSocialesInstagram{
-    width: 35px;
-    height: 40px;
+.redesSocialesFb{
+    font-size: 30px;
+    text-align: right;
+    color: white;
 }
 
-
-.redesSocialesFb .redesSocialesFacebook{
-    width: 55px;
-    height: 40px;
-
+.redesSocialesIg{
+    font-size: 30px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
 }
 
-.redesSocialesW .redesSocialesWhatsapp{
-    width: 65px;
-    height: 60px;
+.redesSocialesW{
+    font-size: 30px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
 }
 
 .footerFontSizeNews{

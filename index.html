@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css">
-    
+    <link rel="stylesheet" href="./estilos.css">
+    <meta name="keywords" content="e-commerce, outfit, prendas, conjuntos, argentina ">
+    <meta name="title" content="Iceshop - Inicio">
+    <meta name="lenguage" content="Spanish">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="description" content="Pequeño e-commerce dirigido a un publico que busca vestir con un flow bestial">
     <title>ICEShop</title> 
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
 </head>
@@ -15,14 +20,14 @@
         <div class="container">
             <div class="row">
 <!-- Intento de barra de busqueda -->
-                <div class="headerDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <form class="barraBusquedaHeader form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar.." name="buscar">
-                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+                <div class="headerDiv container-fluid col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0 col-xs-4" type="submit">Search</button>
                     </form>
                 </div>
 <!-- Intento de barra de busqueda -->  
-                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <a class="navbar-brand" href="#"><span>ICEShop</span></a>
                     <!-- Toggler/collapsibe Button -->
@@ -32,18 +37,28 @@
                     <!-- Navbar links -->
                     <div class="navbarDiv collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
-                        <li class="menuHijo nav-item">
-                            <a class="colorNav1 nav-link" href="./pages/articles/buzos.html">Buzos</a></li>
-                        <li class="menuHijo nav-item">
-                            <a class="colorNav1 nav-link" href="./pages/articles/remeras.html">Remeras</a></li>
-                        <li class="menuHijo nav-item">
-                            <a class="colorNav1 nav-link" href="./pages/articles/bermudas.html">Bermudas</a></li>
-                        <li class="menuHijo nav-item ">
-                            <a class="colorNav1 nav-link" href="./pages/articles/joggers.html">Joggers</a></li>
-                        <li class="menuHijo nav-item ">
-                            <a class="colorNav1 nav-link" href="./pages/articles/conjuntos.html">Conjuntos</a></li>
-                        <li class="menuHijo nav-item">
-                            <a class="colorNav1 nav-link" href="./pages/articles/acesorios.html">Accesorios</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./pages/productos.html">Todos los productos</a>
+                                <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./pages/articles/remeras.html">Remeras</a>
+                            <a class="dropdown-item" href="./pages/articles/buzos.html">Buzos</a>
+                            <a class="dropdown-item" href="./pages/articles/joggers.html">Joggers</a>
+                            <a class="dropdown-item" href="./pages/articles/bermudas.html">Bermudas</a>
+                            <a class="dropdown-item" href="./pages/articles/conjuntos.html">Conjuntos</a>
+                            <a class="dropdown-item" href="./pages/articles/acesorios.html">Accesorios</a>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sizetable.html">Tabla de Talles</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./pages/contact.html">Contacto</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./pages/about_us.html">Acerca de Nosotros</a></li>
                     </ul>
                     </div>
                 </div>
@@ -83,91 +98,91 @@
     </div>  
 
 <!-- parte de un carrousel -->
-        <div id="seccionsIndex" class="container divJoggers">
+        <div class="container divJoggers">
             <div class="row">
-                <a class="imgBuzo d-flex justify-content-center col-sm-4" href="./pages/articles/buzos.html">
-                    <img class="imgBuzoSize" src="./img/buzos.png" alt="Buzos"></a>
-                <a class="imgRemera col-sm-4 d-flex justify-content-center" href="./pages/articles/remeras.html">
-                    <img class="imgRemeraSize" src="./img/REMERAS.png" alt="Remeras"></a>
-                <a class="imgBermuda col-sm-4 d-flex justify-content-center" href="./pages/articles/bermudas.html">
-                    <img class="imgBermudaSize"src="./img/BERMUDAS.png" alt="Bermudas"></a> <br>
-                <a class="imgJoggers col-sm-4 d-flex justify-content-center" href="./pages/articles/joggers.html">
-                    <img class="imgJoggersSize"src="./img/joggers.png" alt="Joggers"></a>
-                <a class="imgConjuntos col-sm-4 d-flex justify-content-center" href="./articles/conjuntos.html">
-                    <img class="imgConjuntosSize"src="./img/conjuntos.png" alt="Conjuntos"></a>
-                <a class="imgAccesorios col-sm-4 d-flex justify-content-center" href="./pages/articles/acesorios.html">
-                    <img class="imgAccesoriosSize"src="./img/ACCESORIOS.png" alt="Accesorios"></a> <br>
+                <a class="d-flex justify-content-center col-sm-4" href="./pages/articles/buzos.html">
+                    <img src="./img/buzos.png" alt="Buzos"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/remeras.html">
+                    <img src="./img/REMERAS.png" alt="Remeras"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/bermudas.html">
+                    <img src="./img/BERMUDAS.png" alt="Bermudas"></a> <br>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/joggers.html">
+                    <img src="./img/joggers.png" alt="Joggers"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./articles/conjuntos.html">
+                    <img src="./img/conjuntos.png" alt="Conjuntos"></a>
+                <a class="col-sm-4 d-flex justify-content-center" href="./pages/articles/acesorios.html">
+                    <img src="./img/ACCESORIOS.png" alt="Accesorios"></a> <br>
             </div>
         </div>
         <a class="buttonAllProducts" href="./pages/productos.html">Ver todos los productos</a>
         <div class="container-fluid">
             <div class="row">
                 <div class="aboutUsIndex col-sm-6">
-                    <h2 class="tituloAboutUsIndex">ICEShop</h2>
-                        <p class="parrafoAboutUsIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae quisquam expedita reiciendis molestiae, itaque nihil cumque numquam neque illo doloribus cupiditate at fugiat sunt quia! In ab mollitia earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veniam pariatur dolorum ducimus ipsam nihil, quidem culpa fugiat, sed nemo magni minus quisquam vero iure laborum eum iusto voluptatibus. Assumenda.</p>
+                    <h2>ICEShop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae quisquam expedita reiciendis molestiae, itaque nihil cumque numquam neque illo doloribus cupiditate at fugiat sunt quia! In ab mollitia earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veniam pariatur dolorum ducimus ipsam nihil, quidem culpa fugiat, sed nemo magni minus quisquam vero iure laborum eum iusto voluptatibus. Assumenda.</p>
                     </div>
-                <div class="aboutUsImagenForm col-sm-6">
-                    <img class="aboutUsImagenSize" src="./img/local.jpeg" alt="Local">
+                <div class="col-sm-6">
+                    <img class="aboutUsImagenSize" src="./img/local.jpg" alt="Local">
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-    <div class="container-fluid">
+        <div class="container-fluid">
         <div class="row">
             <div class="divFootNavegacion col-sm-3">
-                <h3 class="footerFontSizeNavegacion">Navegación</h3>
+                <h3>Navegación</h3>
                 <nav>
-                    <ul class="footerListed nav flex-column">
-                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
-                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/sizetable.html">Tabla de talles</a></li>
-                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/faq.html">FAQ</a></li>
-                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/contact.html">Contacto</a></li>
-                        <li class="footerMenu nav-item"><a class="nav-link" href="./pages/about_us.html">Acerca de nosotros</a></li>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/sizetable.html">Tabla de talles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/about_us.html">Acerca de nosotros</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="divFootPagos col-sm-3">
-                <h3 class="footerFontSizePago">Medios de pago</h3>
-                <div class="divFooterPagosImg">
-                    <i class="mediosDePagoPaypal fa-brands fa-cc-paypal"></i>
-                    <i class="mediosDePagoAmerican fa-brands fa-cc-amex"></i>
-                    <i class="mediosDePagoBtc fa-brands fa-bitcoin"></i> <br>
-                    <i class="mediosDePagoVisa fa-brands fa-cc-visa"></i>
-                    <i class="mediosDePagoMaster fa-brands fa-cc-mastercard"></i>
-                    <i class="mediosDePagoEtherium fa-brands fa-ethereum"></i>
+                <h3>Medios de pago</h3>
+                <div>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-bitcoin"></i> <br>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-ethereum"></i>
                 </div>
             </div>
             <div class="divFootRedes col-sm-3">
                 <h3 class="footerFontSizeRedes">Redes Sociales</h3>
-                <div class="divFootRedesImg">
-                    <a class="redesSocialesFb fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
-                    <a class="redesSocialesIg fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
-                    <a class="redesSocialesW fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
+                <div>
+                    <a class="fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
+                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
+                    <a class="fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
                     <br>
                 </div>
             </div>
-            <div class="divFootNews col-sm-3">
+            <div class="col-sm-3">
             <h3 class="footerFontSizeNews">Newsletter</h3>
             <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
-                <div class="divFootNewsCorreo form-group">
-                        <label for="mail" class="letrashf newsletterCorreo">Correo:</label>
-                        <input class="newsletterImputCorreo form-control" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
-                        <input class="newsletterSubmit btn btn-dark" type="submit" value="Enviar"> <br>
+                <div class="dform-group">
+                        <label for="mail">Correo:</label>
+                        <input class="form-control" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
+                        <input class="btn btn btn-outline-light" type="submit" value="Enviar"> <br>
                 </div>
-                <div class="divFootNewsTerminos form-group form-check">
-                    <input class="newsletterTerminos form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
-                        <label for="checkbox-terminos form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
+                <div class="orm-group form-check">
+                    <input class="form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
+                        <label for="form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
                 </div>
-                <div class="divFootNoticias form-group form-check">
-                    <input class="newsletterNoticia form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
-                        <label for="checkbox-news form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
+                <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
+                        <label for="form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
                 </div>
                 </form>
             </div>
-        </div>    
-    </div>
+            </div>    
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <meta name="keywords" content="e-commerce, outfit, prendas, conjuntos, argentina ">
+    <meta name="title" content="Iceshop - Sobre Nosotros">
+    <meta name="lenguage" content="Spanish">
+    <meta name="city" content="Buenos Aires">
+    <meta name="country" content="Argentina">
+    <meta name="description" content="Pequeño e-commerce dirigido a un publico que busca vestir con un flow bestial">
     <title>¿Donde estamos?</title>
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
 </head>
@@ -14,70 +20,76 @@
         <div class="container">
             <div class="row">
 <!-- Intento de barra de busqueda -->
-                <div class="headerDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <form class="barraBusquedaHeader form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar.." name="buscar">
-                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+                <div class="headerDiv container-fluid col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0 col-xs-4" type="submit">Search</button>
                     </form>
                 </div>
 <!-- Intento de barra de busqueda -->  
-                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <a class="navbar-brand" href="../index.html"><span>ICEShop</span></a>
                     <!-- Toggler/collapsibe Button -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                <div class="navbarDiv collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="menuHijo nav-item">
-                        <a class="colorNav1 nav-link" href="./articles/buzos.html">Buzos</a>
-                    </li>
-                    <li class="menuHijo nav-item">
-                        <a class="colorNav1 nav-link" href="./articles/remeras.html">Remeras</a>
-                    </li>
-                    <li class="menuHijo nav-item">
-                        <a class="colorNav1 nav-link" href="./articles/bermudas.html">Bermudas</a>
-                    </li>
-                    <li class="menuHijo nav-item ">
-                        <a class="colorNav1 nav-link" href="./articles/joggers.html">Joggers</a>
-                    </li>
-                    <li class="menuHijo nav-item ">
-                        <a class="colorNav1 nav-link" href="./articles/conjuntos.html">Conjuntos</a>
-                    </li>
-                    <li class="menuHijo nav-item">
-                        <a class="colorNav1 nav-link" href="./articles/acesorios.html">Accesorios</a>
-                    </li>
-                </ul>
+                    <!-- Navbar links -->
+                    <div class="navbarDiv collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./productos.html">Todos los productos</a>
+                                    <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./articles/remeras.html">Remeras</a>
+                            <a class="dropdown-item" href="./articles/buzos.html">Buzos</a>
+                            <a class="dropdown-item" href="./articles/joggers.html">Joggers</a>
+                            <a class="dropdown-item" href="./articles/bermudas.html">Bermudas</a>
+                            <a class="dropdown-item" href="./articles/conjuntos.html">Conjuntos</a>
+                            <a class="dropdown-item" href="./articles/acesorios.html">Accesorios</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sizetable.html">Tabla de Talles</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">FAQ</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./contact.html">Contacto</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./about_us.html">Acerca de Nosotros</a></li>
+                    </ul>
+                    </div>
                 </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <div class="container-fluid">
-            <div class="row">
+            <div class="aboutUs row">
                 <div class="col-md-6">
-                <h2 class="aboutUs">¿Quienes somos?</h2>
-                    <p class="quienesSomosP">Somos una empresa con amplia trayectoria en el mercado textil, desde 1998 nos especializamos en los siguientes tipos de mercados.</p>
-                <ul class="listaAboutUs">
-                    <li class="productosAbourUs"><b>Confeccionado de prendas</b></li>
-                    <li class="productosAbourUs"><b>Importador de productos</b></li>
-                    <li class="productosAbourUs"><b>Vendedores de productos locales</b></li>
+                <h2>¿Quienes somos?</h2>
+                    <p>Somos una empresa con amplia trayectoria en el mercado textil, desde 1998 nos especializamos en los siguientes tipos de mercados.</p>
+                <ul>
+                    <li><b>Confeccionado de prendas</b></li>
+                    <li><b>Importador de productos</b></li>
+                    <li><b>Vendedores de productos locales</b></li>
                 </ul>
             </div>
-            <div class="row col-md-6">
-            <h2 class="materialPrendas">¿De que materiales son las prendas que realizan?</h2>
-            <dl class="listaPrendas"> 
-                <dt><b>PRENDAS:</b></dt>
-                <dd> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit, illo quis tempore dolorem vel ipsam assumenda, expedita provident iste aperiam repudiandae repellendus voluptate, sapiente vero in praesentium dolorum quas. En el caso de las prendas usamos materiales altamente resistentes a los lavados, sin embargo se deben seguir estas indicaciones:</dd>
-            </dl>
-            <ul class="ListaPrendas">
-                <li class="itemPrendas">Idealmente lavarla a mano</li>
-                <li class="itemPrendas">Podes usar un lavarropa en un programa para prendar delicadas</li>
-                <li class="itemPrendas">No usar secarropas</li>
-                <li class="itemPrendas">Siempre lavar del lado del <b>REVES</b></li>
-                <li class="itemPrendas">Si usas planta, intenta evitar planchar sobre las estampas o letras en relieve</li>
-            </ul>
+            <div class="materialDiv row col-md-6">
+                <h2>¿De que materiales son las prendas que realizan?</h2>
+                <dl> 
+                    <dt><b>PRENDAS:</b></dt>
+                    <dd> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit, illo quis tempore dolorem vel ipsam assumenda, expedita provident iste aperiam repudiandae repellendus voluptate, sapiente vero in praesentium dolorum quas. En el caso de las prendas usamos materiales altamente resistentes a los lavados, sin embargo se deben seguir estas indicaciones:</dd>
+                </dl>
+                <ul>
+                    <li>Idealmente lavarla a mano</li>
+                    <li>Podes usar un lavarropa en un programa para prendar delicadas</li>
+                    <li>No usar secarropas</li>
+                    <li>Siempre lavar del lado del <b>REVES</b></li>
+                    <li>Si usas planta, intenta evitar planchar sobre las estampas o letras en relieve</li>
+                </ul>
             </div>
         </div>
     </main><hr>
@@ -86,57 +98,58 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="divFootNavegacion col-sm-3">
-                    <h3 class="footerFontSizeNavegacion">Navegación</h3>
+                    <h3>Navegación</h3>
                     <nav>
-                        <ul class="footerListed nav flex-column">
-                            <li class="footerMenu nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-                            <li class="footerMenu nav-item"><a class="nav-link" href="./sizetable.html">Tabla de talles</a></li>
-                            <li class="footerMenu nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
-                            <li class="footerMenu nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
-                            <li class="footerMenu nav-item"><a class="nav-link" href="./about_us.html">Acerca de nosotros</a></li>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./sizetable.html">Tabla de talles</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about_us.html">Acerca de nosotros</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="divFootPagos col-sm-3">
-                    <h3 class="footerFontSizePago">Medios de pago</h3>
-                    <div class="divFooterPagosImg">
-                        <i class="mediosDePagoPaypal fa-brands fa-cc-paypal"></i>
-                        <i class="mediosDePagoAmerican fa-brands fa-cc-amex"></i>
-                        <i class="mediosDePagoBtc fa-brands fa-bitcoin"></i> <br>
-                        <i class="mediosDePagoVisa fa-brands fa-cc-visa"></i>
-                        <i class="mediosDePagoMaster fa-brands fa-cc-mastercard"></i>
-                        <i class="mediosDePagoEtherium fa-brands fa-ethereum"></i>
+                    <h3>Medios de pago</h3>
+                    <div>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-bitcoin"></i> <br>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-ethereum"></i>
                     </div>
                 </div>
                 <div class="divFootRedes col-sm-3">
                     <h3 class="footerFontSizeRedes">Redes Sociales</h3>
-                    <div class="divFootRedesImg">
-                        <a class="redesSocialesFb fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
-                        <a class="redesSocialesIg fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
-                        <a class="redesSocialesW fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> <br>
+                    <div>
+                        <a class="fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
+                        <a class="fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
+                        <a class="fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
+                        <br>
                     </div>
                 </div>
-                <div class="divFootNews col-sm-3">
+                <div class="col-sm-3">
                 <h3 class="footerFontSizeNews">Newsletter</h3>
                 <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
-                    <div class="divFootNewsCorreo form-group">
-                            <label for="mail" class="letrashf newsletterCorreo">Correo:</label>
-                            <input class="newsletterImputCorreo form-control" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
-                            <input class="newsletterSubmit btn btn-dark" type="submit" value="Enviar"> <br>
+                    <div class="dform-group">
+                            <label for="mail">Correo:</label>
+                            <input class="form-control" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
+                            <input class="btn btn-dark" type="submit" value="Enviar"> <br>
                     </div>
-                    <div class="divFootNewsTerminos form-group form-check">
-                        <input class="newsletterTerminos form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
-                            <label for="checkbox-terminos form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
+                    <div class="orm-group form-check">
+                        <input class="form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
+                            <label for="form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
                     </div>
-                    <div class="divFootNoticias form-group form-check">
-                        <input class="newsletterNoticia form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
-                            <label for="checkbox-news form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
+                            <label for="form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
                     </div>
                     </form>
                 </div>
             </div>    
         </div>
-        </footer>
+    </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>

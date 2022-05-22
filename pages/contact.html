@@ -17,19 +17,19 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 <!-- Intento de barra de busqueda -->
-                <div class="headerDiv container-fluid col-xs-8 col-sm-4 col-md-4 col-lg-4">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0 col-xs-4" type="submit">Search</button>
+                <div class="headerDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <form class="form-inline my-2">
+                        <input class="inputStyle mr-sm-8" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-4 col-xs-4" type="submit">Search</button>
                     </form>
                 </div>
 <!-- Intento de barra de busqueda -->  
-                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand" href="../index.html"><span>ICEShop</span></a>
+                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="../index.html"><h1>ICEShop</h1></a>
                     <!-- Toggler/collapsibe Button -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
@@ -42,14 +42,15 @@
                             Productos
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./productos.html">Todos los productos</a>
-                                    <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./productos.html">Todos los productos</a>
+                                <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="./articles/remeras.html">Remeras</a>
                             <a class="dropdown-item" href="./articles/buzos.html">Buzos</a>
                             <a class="dropdown-item" href="./articles/joggers.html">Joggers</a>
                             <a class="dropdown-item" href="./articles/bermudas.html">Bermudas</a>
                             <a class="dropdown-item" href="./articles/conjuntos.html">Conjuntos</a>
                             <a class="dropdown-item" href="./articles/acesorios.html">Accesorios</a>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" href="./sizetable.html">Tabla de Talles</a></li>
                         <li class="nav-item">
@@ -80,36 +81,41 @@
             <div class="col-md-6 d-flex justify-content-center">
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
                     <h3>Para reclamos o precios mayorista rellene el siguiente formulario</h3>
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" name="Nombre" required placeholder="Escribe tu nombre"> <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="Apellido">Apellido:</label>
+                                <input type="text" class="form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="Apellido">Apellido:</label>
-                            <input type="text" class="form-control" name="Apellido" required placeholder="Escribe tu apellido"> <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="correo">Correo:</label>
+                                <input type="email" class="form-control" name="correo" required placeholder="Escribe tu correo"> 
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="telefono">Telefono:</label>
+                                <input type="number" class="form-control" name="telefono" required placeholder="Escribe tu telefono"> 
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="telefono">Telefono:</label>
-                            <input type="number" class="form-control" name="telefono" required placeholder="Escribe tu telefono"> <br>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo:</label>
-                            <input type="email" class="form-control" name="correo" required placeholder="Escribe tu correo"> <br>
-                    </div>
-                    <div class="form-group">
+                    <br>
+                    <div class="form-group col-md-6">
                         <label for="Tipo de soporte">Tipo de soporte</label>
-                            <select name="Tipo de soporte" class="form-control">
-                                <option value="">Compra mayorista</option>  
-                                <option value="">El envio no ha llegado</option>
-                                <option value="">Producto defectuoso</option>
-                                <option value="">Otros</option>
-                            </select><br>
+                        <select name="Tipo de soporte" class="form-control">
+                            <option value="">Compra mayorista</option>  
+                            <option value="">El envio no ha llegado</option>
+                            <option value="">Producto defectuoso</option>
+                            <option value="">Otros</option>
+                        </select> <br>
                     </div>
-                    <div class="form-group">
-                        <textarea name="Explicanos en poco" class="form-control" id="" cols="30" rows="10" placeholder="Explicanos un poco" required></textarea><br>
-                    </div>
+                    <div class="form-group col-md-6">
+                        <textarea name="Explicanos en poco" class="form-control" id="" cols="26" rows="10" placeholder="Explicanos un poco" required></textarea><br>
                         <input class="btn btn-dark" type="submit" name="Enviar">
                         <input class="btn btn-dark" type="reset" name="Resetear">
+                    </div>
                 </form>
             </div>
         </div>
@@ -118,57 +124,57 @@
 
 <footer>
     <div class="container-fluid">
-        <div class="row">
-            <div class="divFootNavegacion col-sm-3">
-                <h3>Navegación</h3>
-                <nav>
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./sizetable.html">Tabla de talles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./about_us.html">Acerca de nosotros</a></li>
-                    </ul>
-                </nav>
+    <div class="row">
+        <div class="divFootNavegacion col-sm-3">
+            <h3>Navegación</h3>
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sizetable.html">Tabla de talles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about_us.html">Acerca de nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="divFootPagos col-sm-3">
+            <h3>Medios de pago</h3>
+            <div>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-bitcoin"></i> <br>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-ethereum"></i>
             </div>
-            <div class="divFootPagos col-sm-3">
-                <h3>Medios de pago</h3>
-                <div>
-                    <i class="fa-brands fa-cc-paypal"></i>
-                    <i class="fa-brands fa-cc-amex"></i>
-                    <i class="fa-brands fa-bitcoin"></i> <br>
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <i class="fa-brands fa-cc-mastercard"></i>
-                    <i class="fa-brands fa-ethereum"></i>
-                </div>
+        </div>
+        <div class="divFootRedes col-sm-3">
+            <h3 class="footerFontSizeRedes">Redes Sociales</h3>
+            <div>
+                <a class="fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
+                <a class="fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
+                <a class="fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
+                <br>
             </div>
-            <div class="divFootRedes col-sm-3">
-                <h3 class="footerFontSizeRedes">Redes Sociales</h3>
-                <div>
-                    <a class="fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
-                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
-                    <a class="fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
-                    <br>
-                </div>
+        </div>
+        <div class="col-sm-3">
+        <h3 class="footerFontSizeNews">Newsletter</h3>
+        <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
+            <div class="form-group">
+                    <label for="mail"></label>
+                    <input class="inputStyle2" type="email" name="mail" id="mail" placeholder="">
+                    <input class="btn btn btn-outline-light" type="submit" value="Enviar"> <br>
             </div>
-            <div class="col-sm-3">
-            <h3 class="footerFontSizeNews">Newsletter</h3>
-            <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
-                <div class="dform-group">
-                        <label for="mail">Correo:</label>
-                        <input class="form-control" type="email" name="mail" id="mail" placeholder="nombre@ejemplo.com">
-                        <input class="btn btn-dark" type="submit" value="Enviar"> <br>
-                </div>
-                <div class="orm-group form-check">
-                    <input class="form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
-                        <label for="form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
-                </div>
-                <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
-                        <label for="form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
-                </div>
-                </form>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
+                    <label for="form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
             </div>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
+                    <label for="form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
+            </div>
+            </form>
+        </div>
         </div>    
     </div>
 </footer>

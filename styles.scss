@@ -24,6 +24,7 @@ header{
         width: 40vh;
         font-size: 16;
         text-align: center;
+        color: white;
     }
 }
 .navbarDiv{
@@ -36,10 +37,9 @@ header{
     a{
         color: white;
         text-decoration: none;
-
-    }
-    a:hover{
-        color: grey;
+        &:hover{
+            color: grey;
+        }
     }
 }
 

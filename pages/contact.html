@@ -67,21 +67,20 @@
         </div>
     </header>
 <main>
-    <div class="contactDiv container-fluid">
+    <article class="contactDiv container-fluid">
         <h2><b>CONTACTANOS!</b></h2>
         <div class="row">
-            <div class="col-md-6">
+            <section class="col-md-6">
                 <h3>UNETÉ A NUESTRO EQUIPO DE TRABAJO</h3>
                 <p>Si quieres formar parte de este gran equipo de trabajo lo que hacer es enviar tu
             CV al siguiente correo electronico con algunos datos basicos como nombre y apellido, celular, etc
                     <a href="mailto:correofalso123@gmail.com">Haz click aqui para abrir el correo</a>
                 </p>
-                <p> o copialo desde aqui: correofalso123@gmail.com</p>
-            </div> 
-            <div class="col-md-6 d-flex justify-content-center">
+            </section> 
+            <section class="col-md-6 d-flex justify-content-center">
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
                     <h3>Para reclamos o precios mayorista rellene el siguiente formulario</h3>
-                    <div class="form-row">
+                    <article class="form-row">
                         <div class="form-group col-md-5">
                             <label for="nombre">Nombre:</label>
                                 <input type="text" class="form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
@@ -90,8 +89,8 @@
                             <label for="Apellido">Apellido:</label>
                                 <input type="text" class="form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
                         </div>
-                    </div>
-                    <div class="form-row">
+                    </article>
+                    <article class="form-row">
                         <div class="form-group col-md-5">
                             <label for="correo">Correo:</label>
                                 <input type="email" class="form-control" name="correo" required placeholder="Escribe tu correo"> 
@@ -100,9 +99,9 @@
                             <label for="telefono">Telefono:</label>
                                 <input type="number" class="form-control" name="telefono" required placeholder="Escribe tu telefono"> 
                         </div>
-                    </div>
+                    </article>
                     <br>
-                    <div class="form-group col-md-6">
+                    <article class="form-group col-md-6">
                         <label for="Tipo de soporte">Tipo de soporte</label>
                         <select name="Tipo de soporte" class="form-control">
                             <option value="">Compra mayorista</option>  
@@ -110,16 +109,16 @@
                             <option value="">Producto defectuoso</option>
                             <option value="">Otros</option>
                         </select> <br>
-                    </div>
-                    <div class="form-group col-md-6">
+                    </article>
+                    <article class="form-group col-md-6">
                         <textarea name="Explicanos en poco" class="form-control" id="" cols="26" rows="10" placeholder="Explicanos un poco" required></textarea><br>
                         <input class="btn btn-dark" type="submit" name="Enviar">
                         <input class="btn btn-dark" type="reset" name="Resetear">
-                    </div>
+                    </article>
                 </form>
-            </div>
+            </section>
         </div>
-    </div>
+    </article>
 </main>
 
 <footer>

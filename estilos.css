@@ -33,6 +33,9 @@ header .inputStyle {
   display: flex;
   align-items: flex-end;
 }
+.navbarDiv h1 {
+  text-align: center;
+}
 
 .navbar-brand {
   font-size: 40px;
@@ -49,7 +52,6 @@ header .inputStyle {
 /* FIN HEADER CSS */
 /* MAIN INDEX CSS */
 .carousel {
-  border: 3px solid black;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -57,11 +59,6 @@ header .inputStyle {
   width: 100%;
   height: 500px;
   object-fit: contain;
-}
-.carousel .buttonCarousel {
-  color: black;
-  border-radius: 50%;
-  opacity: 1;
 }
 
 .divJoggers {
@@ -71,6 +68,7 @@ header .inputStyle {
 .divJoggers img {
   border: 5px solid black;
   margin-bottom: 30px;
+  object-fit: contain;
 }
 
 .buttonAllProducts {
@@ -99,6 +97,7 @@ header .inputStyle {
   padding-top: 50px;
   width: 100%;
   height: 400px;
+  object-fit: contain;
 }
 
 /* Main Sizetable CSS */
@@ -138,7 +137,7 @@ header .inputStyle {
 
 /* Button all products sections */
 .todosLosProductos {
-  width: 99.8%;
+  width: 99.7%;
   height: 80px;
   color: #fff;
   padding: 5px 10px;
@@ -157,13 +156,11 @@ header .inputStyle {
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
-
 .todosLosProductos:hover:after {
   top: 0;
   text-align: center;
   left: 0;
 }
-
 .todosLosProductos:after {
   content: "";
   width: 100%;
@@ -183,11 +180,10 @@ header .inputStyle {
   grid-template-areas: "primerArticle segundoArticle tercerArticle" "cuartoArticle quintoArticle sextoArticle" "septimoArticle octavoArticle novenoArticle" "decimoArticle . .";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 25%);
-  text-decoration: underline;
   text-transform: capitalize;
-  color: rgb(63, 61, 61);
+  color: white;
   margin-left: 10px;
-  grid-row-gap: 40px;
+  grid-row-gap: 20px;
 }
 
 .tituloProductos {
@@ -202,151 +198,194 @@ header .inputStyle {
 .primerArticle {
   grid-area: primerArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .primerArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
+  text-decoration: none;
 }
 .primerArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .segundoArticle {
   grid-area: segundoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .segundoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
+  color: white;
 }
 .segundoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .tercerArticle {
   grid-area: tercerArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .tercerArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .tercerArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .cuartoArticle {
   grid-area: cuartoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .cuartoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .cuartoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .quintoArticle {
   grid-area: quintoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .quintoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .quintoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .sextoArticle {
   grid-area: sextoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .sextoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .sextoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .septimoArticle {
   grid-area: septimoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .septimoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .septimoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .octavoArticle {
   grid-area: octavoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .octavoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .octavoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .novenoArticle {
   grid-area: novenoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .novenoArticle h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .novenoArticle img {
   width: 70%;
-  height: 50%;
-  margin-bottom: 30px;
+  height: 70%;
+  object-fit: contain;
 }
 
 .decimoArticle {
   grid-area: decimoArticle;
   text-align: center;
-  border: 4px #000 solid;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin-bottom: 100px;
 }
 .decimoArticle h3 {
   text-align: center;
 }
 .decimoArticle img {
-  width: 60%;
-  height: 60%;
-  margin-bottom: 30px;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
 }
 
 /* Fin productos CSS */
@@ -369,6 +408,7 @@ header .inputStyle {
 .divArticleBuzo img {
   width: 75%;
   height: 300px;
+  object-fit: contain;
 }
 
 .divArticleRemera {
@@ -389,6 +429,7 @@ header .inputStyle {
 .divArticleRemera img {
   width: 75%;
   height: 300px;
+  object-fit: contain;
 }
 
 .divArticleConjuntos {
@@ -409,6 +450,7 @@ header .inputStyle {
 .divArticleConjuntos img {
   width: 75%;
   height: 300px;
+  object-fit: contain;
 }
 
 .divArticleAccs {
@@ -429,6 +471,7 @@ header .inputStyle {
 .divArticleAccs img {
   width: 75%;
   height: 300px;
+  object-fit: contain;
 }
 
 .divArticleJogger {
@@ -449,6 +492,7 @@ header .inputStyle {
 .divArticleJogger img {
   width: 75%;
   height: 300px;
+  object-fit: contain;
 }
 
 .divArticleBermuda {
@@ -468,6 +512,7 @@ header .inputStyle {
 .divArticleBermuda img {
   width: 75%;
   height: 300px;
+  object-fit: contain;
 }
 
 /* Fin Articles */
@@ -520,24 +565,25 @@ header .inputStyle {
 
 /* Fin contact css */
 /* About us CSS */
-.aboutUs h2 {
+.quienesDiv {
+  padding-top: 30px;
+}
+.quienesDiv h2 {
   color: rgb(157, 109, 116);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
   text-decoration: underline;
-  padding-top: 10px;
 }
-.aboutUs p {
+.quienesDiv p {
   width: 100%;
   height: auto;
 }
-.aboutUs ul {
+.quienesDiv ul {
   list-style-type: none;
 }
 
 .materialDiv {
   width: 60%;
   height: auto;
-  padding-top: 30px;
 }
 .materialDiv h2 {
   color: rgb(85, 20, 32);
@@ -564,6 +610,9 @@ footer {
   margin-top: 60px;
 }
 
+.divFootNavegacion {
+  padding-bottom: 20px;
+}
 .divFootNavegacion h3 {
   font-size: 24px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -571,6 +620,9 @@ footer {
 }
 .divFootNavegacion li {
   text-decoration: none;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .divFootNavegacion a {
   text-decoration: none;
@@ -580,6 +632,8 @@ footer {
 
 .divFootPagos {
   text-align: center;
+  padding-bottom: 30px;
+  list-style-type: none;
 }
 .divFootPagos h3 {
   font-size: 20px;
@@ -595,7 +649,9 @@ footer {
 }
 
 .divFootRedes {
+  padding-bottom: 30px;
   text-align: center;
+  list-style-type: none;
 }
 .divFootRedes h3 {
   font-size: 20px;
@@ -608,9 +664,19 @@ footer {
   color: white;
 }
 
-.footerFontSizeNews {
+.footerDiv {
+  align-items: center;
+  list-style-type: none;
+}
+
+.newsletterFont {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.newsletter {
+  align-content: center;
 }
 
 .inputStyle2 {
@@ -618,7 +684,7 @@ footer {
   border-bottom: 1px solid white;
   border-radius: 50px;
   height: 30px;
-  width: 25vh;
+  width: 150px;
   font-size: 16;
   text-align: center;
   color: white;
@@ -697,6 +763,11 @@ footer {
     width: 100%;
   }
 
+  .divProductos {
+    display: flex;
+    flex-direction: column;
+  }
+
   footer {
     position: relative;
     margin-top: 260px;
@@ -712,6 +783,12 @@ footer {
     position: relative;
     left: 0;
     margin-top: 170px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .divProductos {
+    display: flex;
+    flex-direction: column;
   }
 }
 

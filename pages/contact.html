@@ -20,16 +20,16 @@
         <div class="container-fluid">
             <div class="row">
 <!-- Intento de barra de busqueda -->
-                <div class="headerDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="headerDiv container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-5">
                     <form class="form-inline my-2">
-                        <input class="inputStyle mr-sm-8" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-4 col-xs-4" type="submit">Search</button>
+                        <input class="inputStyle mr-sm-8 " type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-4" type="submit">Search</button>
                     </form>
                 </div>
 <!-- Intento de barra de busqueda -->  
-                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="headerDiv navDiv container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-7">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="../index.html"><h1>ICEShop</h1></a>
+                    <h1><a class="navbar-brand" href="../index.html">ICEShop</a></h1>
                     <!-- Toggler/collapsibe Button -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                             <span class="navbar-toggler-icon"></span>
@@ -52,13 +52,13 @@
                             <a class="dropdown-item" href="./articles/acesorios.html">Accesorios</a>
                         </div>
                         <li class="nav-item">
-                            <a class="nav-link" href="./sizetable.html">Tabla de Talles</a></li>
+                            <a class="nav-link" href="./sizetable.html">Talles</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="./faq.html">FAQ</a></li>
                         <li class="nav-item ">
                             <a class="nav-link" href="./contact.html">Contacto</a></li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="./about_us.html">Acerca de Nosotros</a></li>
+                            <a class="nav-link" href="./about_us.html">Sobre Nosotros</a></li>
                     </ul>
                     </div>
                 </div>
@@ -76,34 +76,35 @@
             CV al siguiente correo electronico con algunos datos basicos como nombre y apellido, celular, etc
                     <a href="mailto:correofalso123@gmail.com">Haz click aqui para abrir el correo</a>
                 </p>
+                <img src="../img/fabrica.jpg" alt="Zona de fabrica donde se ven personas trabajando">
             </section> 
             <section class="col-md-6 d-flex justify-content-center">
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-                    <h3>Para reclamos o precios mayorista rellene el siguiente formulario</h3>
+                    <h3>Para reclamos/mayorista rellene el formulario</h3>
                     <article class="form-row">
                         <div class="form-group col-md-5">
                             <label for="nombre">Nombre:</label>
-                                <input type="text" class="form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
+                                <input type="text" class="formSize form-control" name="Nombre" required placeholder="Escribe tu nombre"> 
                         </div>
                         <div class="form-group col-md-5">
                             <label for="Apellido">Apellido:</label>
-                                <input type="text" class="form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
+                                <input type="text" class="formSize form-control" name="Apellido" required placeholder="Escribe tu apellido"> 
                         </div>
                     </article>
                     <article class="form-row">
                         <div class="form-group col-md-5">
                             <label for="correo">Correo:</label>
-                                <input type="email" class="form-control" name="correo" required placeholder="Escribe tu correo"> 
+                                <input type="email" class="formSize form-control" name="correo" required placeholder="Escribe tu correo"> 
                         </div>
                         <div class="form-group col-md-5">
                             <label for="telefono">Telefono:</label>
-                                <input type="number" class="form-control" name="telefono" required placeholder="Escribe tu telefono"> 
+                                <input type="number" class="formSize form-control" name="telefono" required placeholder="Escribe tu telefono"> 
                         </div>
                     </article>
                     <br>
                     <article class="form-group col-md-6">
                         <label for="Tipo de soporte">Tipo de soporte</label>
-                        <select name="Tipo de soporte" class="form-control">
+                        <select name="Tipo de soporte" class="formSize form-control">
                             <option value="">Compra mayorista</option>  
                             <option value="">El envio no ha llegado</option>
                             <option value="">Producto defectuoso</option>
@@ -111,7 +112,7 @@
                         </select> <br>
                     </article>
                     <article class="form-group col-md-6">
-                        <textarea name="Explicanos en poco" class="form-control" id="" cols="26" rows="10" placeholder="Explicanos un poco" required></textarea><br>
+                        <textarea name="Explicanos en poco" class="formSize form-control" id="" cols="26" rows="10" placeholder="Explicanos un poco" required></textarea><br>
                         <input class="btn btn-dark" type="submit" name="Enviar">
                         <input class="btn btn-dark" type="reset" name="Resetear">
                     </article>
@@ -136,45 +137,45 @@
                 </ul>
             </nav>
         </div>
-        <div class="divFootPagos col-sm-3">
+        <section class="divFootPagos col-sm-3">
             <h3>Medios de pago</h3>
-            <div>
+            <article>
                 <i class="fa-brands fa-cc-paypal"></i>
                 <i class="fa-brands fa-cc-amex"></i>
                 <i class="fa-brands fa-bitcoin"></i> <br>
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-mastercard"></i>
                 <i class="fa-brands fa-ethereum"></i>
-            </div>
-        </div>
-        <div class="divFootRedes col-sm-3">
+            </article>
+        </section>
+        <section class="divFootRedes col-sm-3">
             <h3 class="footerFontSizeRedes">Redes Sociales</h3>
-            <div>
+            <article>
                 <a class="fa-brands fa-facebook-square" href="https://www.facebook.com/b.n.nocolas/" target="_blank"></a>
                 <a class="fa-brands fa-instagram" href="https://www.instagram.com/ojjeda._/" target="_blank"></a>
                 <a class="fa-brands fa-whatsapp" href="https://wa.me/qr/7DKI7LDWUYEKA1" target="_blank"></a> 
                 <br>
-            </div>
-        </div>
-        <div class="col-sm-3">
-        <h3 class="footerFontSizeNews">Newsletter</h3>
-        <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
-            <div class="form-group">
+            </article>
+        </section>
+        <section class="footerDiv col-sm-3">
+            <h3 class="newsletterFont">Newsletter</h3>
+            <form class="newsletter" action="https://formspree.io/f/mlezorar" method="post">
+            <article class="formFooter form-group">
                     <label for="mail"></label>
-                    <input class="inputStyle2" type="email" name="mail" id="mail" placeholder="">
+                    <input class="inputStyle2" type="email" name="mail" id="mail">
                     <input class="btn btn btn-outline-light" type="submit" value="Enviar"> <br>
-            </div>
-            <div class="form-group form-check">
+            </article>
+            <article class="formFooter form-group form-check">
                 <input class="form-check-input" type="checkbox" name="checkbox-terminos" value="Aceptar terminos y condiciones" required>
-                    <label for="form-check-label" class="letrashf newsletterAceptoTerminos">¿Acepta los terminos y condiciones?</label><br>
-            </div>
-            <div class="form-group form-check">
+                    <label for="form-check-label">¿Acepta los terminos y condiciones?</label><br>
+            </article>
+            <article class="formFooter form-group form-check">
                 <input class="form-check-input" type="checkbox" name="checkbox-news" value="Acepta newsletter">
-                    <label for="form-check-label" class="letrashf newsletterAceptoNoticia">¿Desea recibir noticias semanalmente?</label>
-            </div>
+                    <label for="form-check-label">¿Desea recibir noticias semanalmente?</label>
+            </article>
             </form>
-        </div>
-        </div>    
+        </section>
+    </div>    
     </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

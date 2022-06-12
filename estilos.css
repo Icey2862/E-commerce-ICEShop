@@ -71,15 +71,20 @@ header .inputStyle {
   object-fit: contain;
 }
 
-.buttonAllProducts {
-  text-align: center;
+.allProducts {
+  display: flex;
+  justify-content: center;
+}
+.allProducts .buttonAllProducts {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 300px;
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 30px;
-  padding: 5px 5px 5px 5px;
-  font-size: 25px;
+  border-radius: 35px;
+  font-size: 30px;
   color: white;
   background-color: black;
-  margin-left: 40%;
   text-decoration: none;
 }
 
@@ -91,6 +96,17 @@ header .inputStyle {
 }
 .aboutUsIndex p {
   font-size: 20px;
+}
+.aboutUsIndex .tituloAboutUsIndex {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.aboutUsIndex .parrafoAboutUsIndex {
+  text-align: center;
+  padding-top: 10px;
 }
 
 .aboutUsImagenSize {
@@ -124,6 +140,11 @@ header .inputStyle {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: underline;
   text-align: center;
+}
+
+.table {
+  width: 50%;
+  height: auto;
 }
 
 /* Fin Sizetable CSS */
@@ -557,10 +578,23 @@ header .inputStyle {
   text-align: center;
   text-decoration: underline;
 }
+.contactDiv img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  width: 80%;
+}
 
 .form-group {
   margin: 0;
   padding: 0;
+}
+
+.formSize {
+  width: 90%;
 }
 
 /* Fin contact css */
@@ -732,13 +766,12 @@ footer {
     margin-top: 40px;
     margin-bottom: 30px;
   }
-
   .aboutUsIndex .tituloAboutUsIndex {
-    font-size: 30px;
+    font-size: 50px;
+    text-transform: uppercase;
     margin-bottom: 3px;
     padding-left: 30px;
   }
-
   .aboutUsIndex .parrafoAboutUsIndex {
     font-size: 20px;
     height: 300px;
@@ -746,17 +779,6 @@ footer {
     padding-top: 30px;
     padding-left: 32px;
     position: relative;
-  }
-
-  .aboutUsIndex .aboutUsImagenForm {
-    display: block;
-  }
-
-  .aboutUsIndex .aboutUsImagenForm .aboutUsImagenSize {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    left: 0;
   }
 
   .newsletterImputCorreo {
@@ -776,19 +798,24 @@ footer {
     min-height: 250px;
   }
 
+  .formFooter {
+    text-align: center;
+  }
+
   /* faq responsives */
   .googleMaps {
     width: 100%;
     height: 300px;
-    position: relative;
-    left: 0;
-    margin-top: 170px;
   }
 }
 @media only screen and (max-width: 880px) {
   .divProductos {
     display: flex;
     flex-direction: column;
+  }
+
+  .formFooter {
+    text-align: center;
   }
 }
 
